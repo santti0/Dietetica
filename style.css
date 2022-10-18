@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header{grid-area: header;}
+.main{grid-area: main;}
+.foooter{grid-area: footer;}
+.container {
+
+    background-color: azure;
+    width: 90%;
+    max-width: 1760px;
+    margin: 25px auto;
+    display: grid;
+    grid-template-areas:
+    'header header'
+    'main main'
+    'footer footer';
+    grid-gap:20px;
+    
+
+
+}
+.container > div{
+    background-color: white;
+    border: 10px solid;
+}
+
+.main{
+    text-align: center;
+    padding: 20px;
+    
+}
+.footer{
+
+    padding: 20px;
+   
+}
